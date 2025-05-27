@@ -1,42 +1,148 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bs-light, #f8f9fa);
+}
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: var(--bs-light, #f8f9fa);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+section {
+  padding: 80px 0;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero-section {
+  position: relative;
+  overflow: hidden;
+  min-height: 80vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
 }
 
-.card {
-  padding: 2em;
+.hero-section > .container {
+  position: relative;
+  z-index: 2;
 }
 
-.read-the-docs {
-  color: #888;
+.amenity-card,
+.unit-card,
+.accommodation-card,
+.review-card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.amenity-card:hover,
+.unit-card:hover,
+.accommodation-card:hover,
+.review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.amenity-card i {
+  font-size: 3.5rem;
+  color: var(--bs-warning);
+}
+
+.unit-image,
+.accommodation-image {
+  height: 250px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.accommodation-card {
+  border: 2px solid var(--bs-warning);
+  box-shadow: 0 0 20px rgba(255, 193, 7, 0.3);
+}
+
+.reviews-carousel .carousel-item {
+  padding: 20px;
+}
+
+.review-avatar {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border: 3px solid var(--bs-primary);
+}
+
+.review-platform-logo {
+  max-height: 40px;
+  margin-bottom: 15px;
+  filter: grayscale(80%);
+  transition: filter 0.3s ease;
+}
+
+.review-platform-logo:hover {
+  filter: grayscale(0%);
+}
+
+#contact .form-control {
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+#contact .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#contact .form-label {
+  color: var(--bs-light);
+  font-weight: 500;
+}
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.navbar-nav .nav-link {
+  position: relative;
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: var(--my-custom-darkbrown);
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
 }
