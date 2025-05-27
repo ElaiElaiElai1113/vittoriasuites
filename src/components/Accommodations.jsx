@@ -21,9 +21,12 @@ function Accommodations() {
   ];
 
   return (
-    <section id="accommodations" className="py-5 bg-success text-white">
+    <section
+      id="accommodations"
+      className="py-5 bg-custom-darkbrown text-white"
+    >
       <Container>
-        <h2 className="display-5 fw-bold text-center mb-5">
+        <h2 className="display-5 fw-bold text-center mb-5 text-custom-brown">
           Our Premium Accommodations
         </h2>
         <Carousel

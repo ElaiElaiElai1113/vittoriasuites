@@ -20,9 +20,12 @@
   color: var(--my-custom-brown) !important;
 }
 
-.text-custom-darkbrown,
-.bg-custom-darkbrown {
+.text-custom-darkbrown {
   color: var(--my-custom-darkbrown) !important;
+}
+
+.bg-custom-darkbrown {
+  background-color: var(--my-custom-darkbrown) !important;
 }
 
 a {

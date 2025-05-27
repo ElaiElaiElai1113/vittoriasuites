@@ -21,9 +21,9 @@ function Contact() {
   };
 
   return (
-    <section id="contact" className="py-5 bg-dark text-white">
+    <section id="contact" className="py-5 bg-custom-darkbrown text-white">
       <Container>
-        <h2 className="display-5 fw-bold text-center text-warning mb-5">
+        <h2 className="display-5 fw-bold text-center text-custom-brown mb-5">
           Get in Touch with Vittoria Suites
         </h2>
         <Row className="justify-content-center">

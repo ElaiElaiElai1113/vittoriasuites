@@ -42,9 +42,9 @@ function Amenities() {
   ];
 
   return (
-    <section id="amenities" className="py-5 bg-white">
+    <section id="amenities" className="py-5 bg-custom-darkbrown">
       <Container>
-        <h2 className="display-5 fw-bold text-center text-success mb-5">
+        <h2 className="display-5 fw-bold text-center text-custom-brown mb-5">
           Experience Unmatched Comfort and Convenience
         </h2>
         <Row className="g-4">

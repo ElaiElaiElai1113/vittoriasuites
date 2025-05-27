@@ -22,7 +22,7 @@ function Reviews() {
   return (
     <section id="reviews" className="py-5 bg-light">
       <Container>
-        <h2 className="display-5 fw-bold text-center text-success mb-5">
+        <h2 className="display-5 fw-bold text-center text-custom-darkbrown mb-5">
           What Our Guests Say
         </h2>
         <Carousel

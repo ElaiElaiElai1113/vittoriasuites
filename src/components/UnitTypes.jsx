@@ -5,7 +5,7 @@ function UnitTypes() {
   return (
     <section id="units" className="py-5 bg-light">
       <Container>
-        <h2 className="display-5 fw-bold text-center text-primary mb-5">
+        <h2 className="display-5 fw-bold text-center text-custom-darkbrown mb-5">
           Our Exquisite Condo Unit Types
         </h2>
         <Row className="g-4 justify-content-center">
@@ -18,14 +18,13 @@ function UnitTypes() {
                 className="unit-image"
               />
               <Card.Body className="p-4">
-                <Card.Title className="h4 fw-bold text-info">
+                <Card.Title className="h4 fw-bold text-custom-darkbrown">
                   Two Bedroom Suite
                 </Card.Title>
                 <Card.Text className="text-muted">
-                  [Client to provide description for Two Bedroom Suite. This
-                  spacious unit is perfect for small families or groups,
+                  This spacious unit is perfect for small families or groups,
                   offering a comfortable living area, a fully equipped kitchen,
-                  and two private bedrooms for ultimate relaxation.]
+                  and two private bedrooms for ultimate relaxation.
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -39,14 +38,13 @@ function UnitTypes() {
                 className="unit-image"
               />
               <Card.Body className="p-4">
-                <Card.Title className="h4 fw-bold text-info">
+                <Card.Title className="h4 fw-bold text-custom-darkbrown">
                   Three Bedroom Suite
                 </Card.Title>
                 <Card.Text className="text-muted">
-                  [Client to provide description for Three Bedroom Suite. Ideal
-                  for larger families or friends traveling together, our
+                  Ideal for larger families or friends traveling together, our
                   three-bedroom suite provides expansive living spaces, multiple
-                  bathrooms, and all the amenities needed for a memorable stay.]
+                  bathrooms, and all the amenities needed for a memorable stay.
                 </Card.Text>
               </Card.Body>
             </Card>
