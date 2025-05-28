@@ -8,7 +8,7 @@ function AboutUs() {
         <Row className="align-items-center">
           <Col lg={6} className="mb-4 mb-lg-0">
             <img
-              src="src/assets/vittoriasuiteslogo.jpg"
+              src="public/vittoriasuiteslogo.jpg"
               alt="About Us"
               className="img-fluid rounded shadow-lg"
             />
