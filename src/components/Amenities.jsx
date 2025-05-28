@@ -44,13 +44,22 @@ function Amenities() {
   return (
     <section id="amenities" className="py-5 bg-custom-darkbrown">
       <Container>
-        <h2 className="display-5 fw-bold text-center text-custom-brown mb-5">
+        <h2
+          className="display-5 fw-bold text-center text-custom-brown mb-5"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           Experience Unmatched Comfort and Convenience
         </h2>
         <Row className="g-4">
           {amenitiesList.map((amenity, index) => (
             <Col md={6} lg={4} key={index}>
-              <Card className="h-100 shadow-sm border-0 amenity-card">
+              <Card
+                className="h-100 shadow-sm border-0 amenity-card"
+                data-aos="fade-up"
+                data-aos-delay="800"
+                data-aos-duration="1000"
+              >
                 <Card.Body className="text-center p-4">
                   <i
                     className={`bi ${amenity.icon} display-4 text-warning mb-3`}

@@ -22,7 +22,11 @@ function Reviews() {
   return (
     <section id="reviews" className="py-5 bg-light">
       <Container>
-        <h2 className="display-5 fw-bold text-center text-custom-darkbrown mb-5">
+        <h2
+          className="display-5 fw-bold text-center text-custom-darkbrown mb-5"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           What Our Guests Say
         </h2>
         <Carousel
@@ -32,7 +36,12 @@ function Reviews() {
         >
           {reviewsData.map((review, index) => (
             <Carousel.Item key={index}>
-              <Row className="justify-content-center">
+              <Row
+                className="justify-content-center"
+                data-aos="fade-up"
+                data-aos-delay="600"
+                data-aos-duration="1000"
+              >
                 <Col md={8} className="p-4">
                   <Card className="border-0 shadow-sm review-card">
                     <Card.Body className="text-center">

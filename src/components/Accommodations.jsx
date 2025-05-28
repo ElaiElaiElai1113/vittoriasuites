@@ -26,7 +26,11 @@ function Accommodations() {
       className="py-5 bg-custom-darkbrown text-white"
     >
       <Container>
-        <h2 className="display-5 fw-bold text-center mb-5 text-custom-brown">
+        <h2
+          className="display-5 fw-bold text-center mb-5 text-custom-brown"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           Our Premium Accommodations
         </h2>
         <Carousel
@@ -40,7 +44,12 @@ function Accommodations() {
         >
           {accommodationUnits.map((unit, index) => (
             <Carousel.Item key={index}>
-              <Row className="justify-content-center">
+              <Row
+                className="justify-content-center"
+                data-aos="fade-up"
+                data-aos-delay="600"
+                data-aos-duration="1000"
+              >
                 <Col md={8} lg={6}>
                   <Card className="bg-dark text-white text-center shadow-lg accommodation-card">
                     <Card.Img

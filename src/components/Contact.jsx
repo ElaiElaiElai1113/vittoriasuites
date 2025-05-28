@@ -23,18 +23,30 @@ function Contact() {
   return (
     <section id="contact" className="py-5 bg-custom-darkbrown text-white">
       <Container>
-        <h2 className="display-5 fw-bold text-center text-custom-brown mb-5">
+        <h2
+          className="display-5 fw-bold text-center text-custom-brown mb-5"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           Get in Touch with Vittoria Suites
         </h2>
         <Row className="justify-content-center">
           <Col md={8} lg={6}>
-            <p className="lead text-center mb-4">
+            <p
+              className="lead text-center mb-4"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+            >
               Have questions or ready to book your unforgettable stay? Send us a
               message!
             </p>
             <Form
               onSubmit={handleSubmit}
               className="p-4 rounded shadow-lg bg-secondary bg-opacity-10"
+              data-aos="fade-up"
+              data-aos-delay="400"
+              data-aos-duration="1000"
             >
               <Form.Group className="mb-3" controlId="formName">
                 <Form.Label>Full Name</Form.Label>

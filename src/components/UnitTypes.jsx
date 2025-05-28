@@ -5,10 +5,19 @@ function UnitTypes() {
   return (
     <section id="units" className="py-5 bg-light">
       <Container>
-        <h2 className="display-5 fw-bold text-center text-custom-darkbrown mb-5">
+        <h2
+          className="display-5 fw-bold text-center text-custom-darkbrown mb-5"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           Our Exquisite Condo Unit Types
         </h2>
-        <Row className="g-4 justify-content-center">
+        <Row
+          className="g-4 justify-content-center"
+          data-aos="fade-up"
+          data-aos-delay="400"
+          data-aos-duration="1000"
+        >
           <Col md={6}>
             <Card className="h-100 shadow-lg border-0 unit-card">
               <Card.Img
