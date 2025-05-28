@@ -8,7 +8,7 @@ function Hero() {
       className="hero-section d-flex align-items-center justify-content-center text-center text-white"
       style={{
         backgroundImage:
-          'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url("public/background.jpg")',
+          'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url("/background.jpg")',
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
