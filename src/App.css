@@ -141,3 +141,37 @@ section {
 .navbar-nav .nav-link:hover::after {
   width: 100%;
 }
+
+.back-to-top-button {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: var(--bs-warning);
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out,
+    visibility 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.back-to-top-button.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.back-to-top-button:hover {
+  background-color: var(--my-custom-darkbrown);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}

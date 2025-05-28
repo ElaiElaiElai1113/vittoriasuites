@@ -24,8 +24,8 @@ AOS.init({
   delay: 0,
   duration: 800,
   easing: "ease",
-  once: true,
-  mirror: false,
+  once: false,
+  mirror: true,
   anchorPlacement: "top-bottom",
 });
 

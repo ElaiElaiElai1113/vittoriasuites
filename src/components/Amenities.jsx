@@ -57,7 +57,7 @@ function Amenities() {
               <Card
                 className="h-100 shadow-sm border-0 amenity-card"
                 data-aos="fade-up"
-                data-aos-delay="800"
+                data-aos-delay="600"
                 data-aos-duration="1000"
               >
                 <Card.Body className="text-center p-4">

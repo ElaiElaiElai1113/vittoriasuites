@@ -9,19 +9,23 @@ import Reviews from "./components/Reviews";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import "./App.css";
+import BackToTopButton from "./components/BackToTopButton";
 
 function App() {
   return (
     <div className="App">
       <NavbarComponent />
-      <Hero />
-      <AboutUs />
-      <Amenities />
-      <UnitTypes />
-      <Accommodations />
-      <Reviews />
-      <Contact />
+      <main>
+        <Hero />
+        <AboutUs />
+        <Amenities />
+        <UnitTypes />
+        <Accommodations />
+        <Reviews />
+        <Contact />
+      </main>
       <Footer />
+      <BackToTopButton />
     </div>
   );
 }
